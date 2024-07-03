@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
@@ -23,57 +22,39 @@
         }
         .message-container {
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             text-align: center;
-            width: 80%;
-            max-width: 600px;
+            width: 90%;
+            max-width: 400px;
             animation: fadeIn 2s ease-in-out;
+            margin: auto; /* يوسط الرسالة على الشاشة */
         }
         .message-title {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
         .message-content {
-            font-size: 1.5rem;
-            margin: 20px 0;
+            font-size: 1.2rem;
+            margin: 10px 0;
         }
         .sparkle {
-            font-size: 3rem;
+            font-size: 2rem;
             color: #ffd700; /* لون البريق الأصفر */
             animation: sparkles 1s infinite;
         }
         .hearts {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            overflow: hidden;
-        }
-        .hearts div {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: url('https://image.shutterstock.com/image-vector/heart-icon-symbol-love-valentine-260nw-1054917564.jpg') no-repeat center center;
-            background-size: contain;
-            animation: float 6s infinite;
+            display: none; /* لن يظهر البريق على الأجهزة الصغيرة */
         }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
         @keyframes sparkles {
-            0% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 40px #ffd700; }
-            50% { text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 80px #ffd700; }
-            100% { text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 40px #ffd700; }
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-100px); }
-            100% { transform: translateY(0); }
+            0% { text-shadow: 0 0 3px #ffd700, 0 0 6px #ffd700, 0 0 12px #ffd700, 0 0 24px #ffd700; }
+            50% { text-shadow: 0 0 6px #ffd700, 0 0 12px #ffd700, 0 0 24px #ffd700, 0 0 48px #ffd700; }
+            100% { text-shadow: 0 0 3px #ffd700, 0 0 6px #ffd700, 0 0 12px #ffd700, 0 0 24px #ffd700; }
         }
     </style>
 </head>
@@ -82,18 +63,6 @@
     <div class="message-container">
         <div class="message-title">رسالة حب وأخوة</div>
         <div class="message-content">أخي العزيز <span class="sparkle" style="color: #ffd700;">عبد الله جبران</span>،<br>أنا فخور بك للغاية وأحبك من كل قلبي. أنت دائماً مصدر الدعم والقوة لي.<br>أتمنى لك دوام النجاح والسعادة.<br>محبك دائماً،<br><span class="sparkle" style="color: #ffd700;">عبد القادر جبران</span>.</div>
-    </div>
-
-    <div class="hearts">
-        <div style="left: 10%; animation-delay: 0s;"></div>
-        <div style="left: 20%; animation-delay: 1s;"></div>
-        <div style="left: 30%; animation-delay: 2s;"></div>
-        <div style="left: 40%; animation-delay: 3s;"></div>
-        <div style="left: 50%; animation-delay: 4s;"></div>
-        <div style="left: 60%; animation-delay: 5s;"></div>
-        <div style="left: 70%; animation-delay: 6s;"></div>
-        <div style="left: 80%; animation-delay: 7s;"></div>
-        <div style="left: 90%; animation-delay: 8s;"></div>
     </div>
 
 </body>
